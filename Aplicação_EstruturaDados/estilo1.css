@@ -1,0 +1,84 @@
+body{
+    padding-top: 5vh;
+    background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/394310/80824ca68c16f57fec97e144c6518cc23ff4820b.jpg);
+    background-size: cover; /*Encaixar a imagem no site*/
+    background-position-x: -150px;
+}   
+
+footer{
+    margin-top: 1cm;
+    text-align: right;
+    margin-right: 1cm;
+    font-size: small;
+    color: palevioletred;
+  }
+
+/*////////////////////////////////////////////////////////$$$$$$$$$$$$$$$$$//////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////$$$$$$$$$$$$$$$$$/////////////////////////////////////////////////////////////////*/
+*{
+    margin: 0;
+    padding: 10000;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+input, label, button{
+    display: block;
+    outline: none;
+    width: auto;
+}
+
+input:focus, label:focus, button:focus{
+    outline: none;
+}
+
+#TudoOuNada{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#TudoOuNada h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 25px;
+}
+input:focus{
+    border-color: #e60084;
+}
+button:focus{
+    border-color: #FFF;
+}
+
+button{
+    background-color: #e60084;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}

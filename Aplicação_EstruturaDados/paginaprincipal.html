@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+    <script src = "funcoes.js"></script>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+<div id="TudoOuNada">
+    <header>
+        <h2> Cadastro de Aluno </h2><br>
+   </header>
+   <div class="Caixa">
+    <label for="nome">Nome do aluno</label>
+    </div>
+    <div class="Caixa">
+        <input type="text" id="nome" placeholder="Digite O Nome">
+    </div>
+    <div class="genero">
+
+        <label for="Genero">Gênero</label><br> 
+
+            <form id="genero">
+
+              <br><p><input type="checkbox" value="Masculino" name="genero"></p>
+
+              <label for="Masculino">Masculino</label><br>
+
+              <input type="checkbox" value="Feminino" name="genero">
+
+              <label for="Feminino">Feminino</label><br>
+
+              <input type="checkbox" value="Indefinido" name="genero">
+
+              <label for="Indefinido">Prefere não informar</label><br>
+
+            </form>
+        </p>
+    </div>
+    <div id="Ra">
+    <label for="ra">RA</label>
+    </div>
+    <div class="Caixa">
+        <input type="number" id="ra" placeholder="Digite RA">
+    </div>
+    <br>
+    <div id="Media">
+        <label for="media">Média final do aluno</label>
+    </div>
+    <div class="Caixa">
+        <input type="Number" id="media" placeholder="Digite A Média">
+    </div>
+    <br>
+    <div id="Cadastro">
+        <button type="button" onClick="cadastro()">Cadastrar aluno</p></button>
+    </div>
+    <br>
+    <div id="Botão">
+
+        <button type="button" onClick="selectionSort(alunos,'crescente','nome')">Visualizar nomes em ordem crescente</button>
+		<br>
+        <button type="button" onClick="selectionSort(alunos,'decrescente','RA')">Visualizar RA em ordem decrescente</p></button>
+		<br>
+        <button type="button" onClick="selectionSort(alunosaprovados,'crescente','nome')">Ordem crescente por nome dos aprovados</button>
+
+    </div>
+
+    <br>
+
+    <div id="Sim">
+
+        <button type="button" onClick="checar(alunos)">Checar (console log)</button> 
+
+    </div>
+
+    <br>
+
+    <div id="Finish">
+
+        <button type="button" onClick="encerrar()">Limpar Historico de Cadastro</button>
+
+    </div>
+
+</div>  
+
+    <footer>
+
+        <h4>Copyright © 2022 // Lucas Araujo, Luís Eduardo 3ºADS</h4>
+
+  </footer>
+
+</html>
